@@ -1,0 +1,11 @@
+note over browser:
+Write a note and click in "Save" Button
+end note
+
+note over browser:
+browser executes the submit event handler
+that renders notes to display and send to Server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: HTTP/201 Created, JSON: {"message":"note created"}
